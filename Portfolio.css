@@ -1,0 +1,60 @@
+/* Portfolio.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .personal {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Text and Heading Styles */
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  h2 {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+    color: #777;
+  }
+  
+  /* Profile Image Styles */
+  .container img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  

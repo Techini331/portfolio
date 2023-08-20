@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js" integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="Portfolio.css"/>
+    
+  
+    
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+    <div class="container">
+        <img src="data:image/jpg;base64,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" alt="profile">
+        <h2>Techini Srihawong</h2>
+      </div>
+
+      <div class="personal">
+      <h2>ข้อมูลส่วนตัว</h2>
+            <h>ชื่อ เตชินี ศรีหาวงษ์</h><br>
+            <h> ชื่อเล่น ส้ม</h><br>
+            <h>อายุ 19 ปี</h><br>
+            <h>กิจวัตรประจําวัน คือ ดูซีรีย์ อ่านหนังสือ ฟังเพลง ทำงาน</h><br>
+            <h>ความชอบ ช้อปปิ้ง เที่ยว ทำงานบ้าน ร้องเพลง</h>
+
+</div><br><br><br>
+
+<div style="width: 50%; margin: 0 auto";>
+    <canvas id="myChart" width="400" height="200"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const labels = ["ฟังเพลง", "ทำงาน", "ดูซีรีย์", "อ่านหนังสือ", "เที่ยว", "ร้องเพลง", "ทำงานบ้าน"];
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'สิ่งที่ชอบทำ',
+        data: [80, 60, 70, 68, 50, 45, 70],
+        backgroundColor: [
+      'rgba(255, 102, 102, 0.7)',  // สีแดงอมเขียว
+      'rgba(255, 204, 102, 0.7)',  // สีส้มอมเหลือง
+      'rgba(102, 204, 102, 0.7)',  // สีเขียวอมเหลือง
+      'rgba(102, 204, 255, 0.7)',  // สีน้ำเงินอ่อน
+      'rgba(204, 102, 255, 0.7)',  // สีม่วงอ่อน
+      'rgba(255, 102, 255, 0.7)',  // สีม่วงอมเขียว
+      'rgba(204, 204, 204, 0.7)'   // สีเทาอ่อน
+    ],
+    borderColor: [
+      'rgb(255, 102, 102)',
+      'rgb(255, 204, 102)',
+      'rgb(102, 204, 102)',
+      'rgb(102, 204, 255)',
+      'rgb(204, 102, 255)',
+      'rgb(255, 102, 255)',
+      'rgb(204, 204, 204)'
+    ],
+    borderWidth: 1
+  }]
+};
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: data
+    });
+ </script>
+ 
+ <canvas id="lineChart" width="400" height="200"></canvas>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script>
+  const lineLabels = ["ฟังเพลง", "ทำงาน", "ดูซีรีย์", "อ่านหนังสือ", "เที่ยว", "ร้องเพลง", "ทำงานบ้าน"];
+  const lineData = [80, 60, 70, 68, 50, 45, 70];
+
+  var lineCtx = document.getElementById('lineChart').getContext('2d');
+  var lineChart = new Chart(lineCtx, {
+    type: 'line',
+    data: {
+      labels: lineLabels,
+      datasets: [{
+        label: 'สิ่งที่ชอบทำ',
+        data: lineData,
+        borderColor: 'rgba(75, 192, 192, 1)',
+        fill: false
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+<canvas id="pieChart" width="400" height="200"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const pieLabels = ["ฟังเพลง", "ทำงาน", "ดูซีรีย์", "อ่านหนังสือ", "เที่ยว", "ร้องเพลง", "ทำงานบ้าน"];
+  const pieData = [80, 60, 70, 68, 50, 45, 70];
+  const pieColors = [
+    'rgba(255, 102, 102, 0.7)',
+    'rgba(255, 204, 102, 0.7)',
+    'rgba(102, 204, 102, 0.7)',
+    'rgba(102, 204, 255, 0.7)',
+    'rgba(204, 102, 255, 0.7)',
+    'rgba(255, 102, 255, 0.7)',
+    'rgba(204, 204, 204, 0.7)'
+  ];
+
+  var pieCtx = document.getElementById('pieChart').getContext('2d');
+  var pieChart = new Chart(pieCtx, {
+    type: 'pie',
+    data: {
+      labels: pieLabels,
+      datasets: [{
+        data: pieData,
+        backgroundColor: pieColors
+      }]
+    }
+  });
+</script>
+
+ 
+  
+    <canvas id="myChart"></canvas>
+    <script src="Portfolio.js"></script> <!-- เรียกไฟล์ JavaScript ที่คุณสร้าง -->
+
+    
+</body>
+</html>
